@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Envios</title>
+</head>
+<body>
+    
+<div class="shipping-calculator">
+    <h1>Calculadora de Envíos</h1>
+    <form action="validar.php" method="post">
+  
+        <!-- Tipo de envío -->
+        <div class="section">
+            
+        </div>
+  
+        <!-- Datos de origen -->
+        <fieldset>
+            <legend>Datos de Origen</legend>
+            <div class="section">
+                <label for="origenPais">País de origen:</label>
+               
+  
+                <label for="origenCP">Código Postal de origen:</label>
+                <input
+                    id="origenCP"
+                    type="text"
+                    name="origenCP"
+                    placeholder="Ej. 41510"
+                    required
+                />
+            </div>
+        </fieldset>
+  
+        <!-- Datos de destino -->
+        <fieldset>
+            <legend>Datos de Destino</legend>
+            <div class="section">
+                <label for="destinoPais">País de destino:</label>
+             
+  
+                <label for="destinoCP">Código Postal de destino:</label>
+                <input
+                    id="destinoCP"
+                    type="text"
+                    name="destinoCP"
+                    placeholder="Ej. 23009"
+                    required
+                />
+            </div>
+        </fieldset>
+  
+        <!-- Detalles del paquete -->
+        <fieldset>
+            <legend>Detalles del Paquete</legend>
+            <div class="section">
+                <label for="peso">Peso (kg):</label>
+                <input
+                    id="peso"
+                    type="number"
+                    name="peso"
+                    placeholder="Ej. 1"
+                    min="0"
+                    step="0.1"
+                    required
+                />
+  
+                <label for="largo">Largo (cm):</label>
+                <input
+                    id="largo"
+                    type="number"
+                    name="largo"
+                    placeholder="Ej. 20"
+                    min="0"
+                    required
+                />
+  
+                <label for="ancho">Ancho (cm):</label>
+                <input
+                    id="ancho"
+                    type="number"
+                    name="ancho"
+                    placeholder="Ej. 30"
+                    min="0"
+                    required
+                />
+  
+                <label for="alto">Alto (cm):</label>
+                <input
+                    id="alto"
+                    type="number"
+                    name="alto"
+                    placeholder="Ej. 10"
+                    min="0"
+                    required
+                />
+            </div>
+        </fieldset>
+  
+        <!-- Botón para calcular -->
+        <div class="section">
+            <button type="submit">Calcular Precio</button>
+        </div>
+  
+    </form>
+  
+    
+  </div>
+</body>
+</html>
